@@ -24,10 +24,10 @@ let numberOfBombsPlaced = 0;
 //Currently can place bombs on top of existing bombs
 while(numberOfBombsPlaced < numberOfBombs) {
   let randomRowIndex =
-  Math.floor((Math.random() * numberOfRows) + 1);
+  Math.floor(Math.random() * numberOfRows);
 
   let randomColumnIndex =
-  Math.floor((Math.random() * numberOfColumns) + 1);
+  Math.floor(Math.random() * numberOfColumns);
 
   board[randomRowIndex][randomColumnIndex] = 'B';
 
